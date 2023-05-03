@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/background-garden.svg);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+#moles {
+  max-width: 1200px;
+  margin: 100px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.mole {
+  background-image: url(./assets/mole6.svg);
+  width: 221.81px;
+  height: 168.11px;
+
+  cursor: pointer;
+}
+
+.mole:hover {
+  animation: mole 1s infinite;
+}
+
+@keyframes mole {
+  0% {
+    background-image: url(./assets/mole1.svg);
+  }
+  20% {
+    background-image: url(./assets/mole2.svg);
+  }
+  40% {
+    background-image: url(./assets/mole3.svg);
+  }
+  60% {
+    background-image: url(./assets/mole4.svg);
+  }
+  80% {
+    background-image: url(./assets/mole5.svg);
+  }
+  100% {
+    background-image: url(./assets/mole6.svg);
+  }
+}
